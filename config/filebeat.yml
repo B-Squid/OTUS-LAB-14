@@ -164,9 +164,9 @@ setup.kibana:
 # Configure what output to use when sending the data collected by the beat.
 
 #-------------------------- Elasticsearch output ------------------------------
-output.elasticsearch:
+#output.elasticsearch:
   # Array of hosts to connect to.
-  hosts: ["192.168.11.102:9200"]
+#  hosts: ["log:9200"]
 
   # Enabled ilm (beta) to use index lifecycle management instead daily indices.
   #ilm.enabled: false
@@ -178,7 +178,7 @@ output.elasticsearch:
 
 #----------------------------- Logstash output --------------------------------
 output.logstash:
-  hosts: ["192.168.11.102:5044"]
+  hosts: ["log:5044"]
 
   # Optional SSL. By default is off.
   # List of root certificates for HTTPS server verifications
